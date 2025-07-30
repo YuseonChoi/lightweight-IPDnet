@@ -3,6 +3,7 @@
 
 
 ### Baseline Model
+This work is inspired by the following research paper:
 Wang, Yabo, Bing Yang, and Xiaofei Li. "IPDnet: A universal direct-path IPD estimation network for sound source localization." IEEE/ACM Transactions on Audio, Speech, and Language Processing (2024).
 
 ### Publication
