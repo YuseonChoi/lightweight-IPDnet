@@ -19,10 +19,11 @@
 ## 📊 Result
 - Experiments show that the proposed model reduces computational cost by up to 51% compared to the baseline, while achieving comparable or even superior localization performance in terms of Gross Accuracy and Fine Error.
 - The results confirm that the proposed model maintains reliable localization performance even in low-resource environments.
-<br/>
+
 
 ## 📝 Publication
 Yuseon Choi, Hyunseung Kim, and Jongwon Shin, “A Study on Lightweight Modeling for Real-Time Multi-Moving Sound Source Localization via Direct-Path Interchannel Phase Difference Estimation,” The Korean Institute of Communications and Information Sciences (KICS) Summer Conference, June 2025.
+<br/>
 <br/>
 
 ## 📚 Reference
