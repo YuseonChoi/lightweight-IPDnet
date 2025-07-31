@@ -28,6 +28,7 @@
 ## 📝 Publication
 Yuseon Choi, Hyunseung Kim, and Jongwon Shin, “A Study on Lightweight Modeling for Real-Time Multi-Moving Sound Source Localization via Direct-Path Interchannel Phase Difference Estimation,” The Korean Institute of Communications and Information Sciences (KICS) Summer Conference, June 2025.
 <br>
+<br>
 
 
 ## 📚 Reference
