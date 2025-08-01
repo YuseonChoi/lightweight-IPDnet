@@ -1,0 +1,63 @@
+MyModel(
+  (arch): IPDnet(
+    (block): ModuleList(
+      (0): FNblockNorm(
+        (dsample_conv): Sequential(
+          (0): Conv2d(4, 128, kernel_size=(3, 4), stride=(1, 2))
+          (1): PReLU(num_parameters=1)
+        )
+        (norm): cLN()
+        (dropout_full): Dropout(p=0.1, inplace=False)
+        (dropout_narr): Dropout(p=0.1, inplace=False)
+        (norm_full): cLN()
+        (norm_narr): cLN()
+        (fullLstm): LSTM(128, 64, batch_first=True, bidirectional=True)
+        (narrLstm): LSTM(128, 128, batch_first=True)
+      )
+      (1): FNblockNorm(
+        (dsample_conv): Sequential(
+          (0): Conv2d(128, 128, kernel_size=(3, 4), stride=(1, 2))
+          (1): PReLU(num_parameters=1)
+        )
+        (norm): cLN()
+        (dropout_full): Dropout(p=0.1, inplace=False)
+        (dropout_narr): Dropout(p=0.1, inplace=False)
+        (norm_full): cLN()
+        (norm_narr): cLN()
+        (fullLstm): LSTM(128, 64, batch_first=True, bidirectional=True)
+        (narrLstm): LSTM(128, 128, batch_first=True)
+      )
+      (2): FNblockNorm(
+        (dsample_conv): Sequential(
+          (0): Conv2d(128, 128, kernel_size=(3, 6), stride=(1, 3))
+          (1): PReLU(num_parameters=1)
+        )
+        (norm): cLN()
+        (dropout_full): Dropout(p=0.1, inplace=False)
+        (dropout_narr): Dropout(p=0.1, inplace=False)
+        (norm_full): cLN()
+        (norm_narr): cLN()
+        (fullLstm): LSTM(128, 64, batch_first=True, bidirectional=True)
+        (narrLstm): LSTM(128, 128, batch_first=True)
+      )
+    )
+    (conv): CausCnnBlock(
+      (conv1): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 2), bias=False)
+      (conv2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 2), bias=False)
+      (conv3): Conv2d(128, 4, kernel_size=(3, 3), stride=(1, 1), padding=(1, 2), bias=False)
+      (relu): ReLU(inplace=True)
+      (tanh): Tanh()
+    )
+  )
+  (dostft): STFT()
+  (gerdpipd): DPIPD()
+  (addbatch): AddChToBatch()
+  (removebatch): RemoveChFromBatch()
+  (get_metric): PredDOA(
+    (removebatch): RemoveChFromBatch()
+    (gerdpipd): DPIPD()
+    (getmetric): getMetric()
+  )
+)
+
+
