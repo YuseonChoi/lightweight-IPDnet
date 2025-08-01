@@ -29,7 +29,7 @@
 
 <p align="center">Table 1. Comparison of sound source localization performance between the baseline and the lightweight model on the simulated dataset.</p>
 
-- Experiments show that the proposed model reduces computational cost by up to 51% compared to the baseline, while achieving comparable or even superior localization performance in terms of Gross Accuracy and Fine Error.
+- Experiments show that the proposed model reduces computational cost by up to 51% compared to the baseline, while achieving comparable localization performance in terms of Gross Accuracy and Fine Error.
 - The results confirm that the proposed model maintains reliable localization performance even in low-resource environments.
 <br>
 
