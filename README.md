@@ -27,7 +27,7 @@
 | Full-Narrow Block × 2 (Baseline)       | 0.71          | 19.35       | 90.91               | **2.01**       |
 | Lightweight Model                      | 1.49          | 9.4         | **91.31**           | 2.18           |
 
-<p align="center">Table 1.ㅣPerformance comparison between the baseline and the lightweight model on the simulation dataset.</p>
+<p>Table 1.ㅣPerformance comparison between the baseline and the lightweight model on the simulation dataset.</p>
 
 - Experiments show that the proposed model reduces computational cost by up to 51% compared to the baseline, while achieving comparable localization performance in terms of Gross Accuracy and Fine Error.
 - The results confirm that the proposed model maintains reliable localization performance even in low-resource environments.
