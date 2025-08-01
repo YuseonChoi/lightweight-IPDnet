@@ -14,6 +14,7 @@
 
 
 ## ⭐ Method
+![Model Architecture](imgs/models.png)
 - To improve computational efficiency, the model incorporates down-sampling blocks composed of convolutional layers. These progressively compress the temporal dimension while extracting compact feature representations.
 - The original skip connection method based on concatenation is replaced with summation to further reduce computation.
 <br>
